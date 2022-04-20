@@ -175,7 +175,7 @@ def make_lungmask(img, display=False):
         ax[2, 1].set_title("Apply Mask on Original")
         ax[2, 1].imshow(mask*img, cmap='gray')
         ax[2, 1].axis('off')
-        
+        plt.savefig("abc.jpg")
         plt.show()
     return mask*img
 
